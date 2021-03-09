@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    height: 100vh;
+    font-family: poppins;
+    background-color: slategrey;
+}
+img{
+    width: 100%;
+    visibility: hidden ;
+    position: hidden !important;
+    display: none;
+}
+ .container{
+    display: flex;
+    margin:   5em 0em  5em;
+    position: relative; 
+
+ 
+}
+section{
+    width: 800px;
+    position: absolute;
+    right: 10em;
+}
+.intro{
+    display: block;
+}

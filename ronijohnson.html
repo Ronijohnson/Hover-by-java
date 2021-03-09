@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ronijohnson.css">
+    <title>BOOKCENTER</title>
+</head>
+<body class="box">
+ 
+    <center> <h1 >Wellcome to IBookCenter</h1> <hr></center>
+           <div>
+            <form>
+                <p> <h2 >Please enter your data</h2></p>
+                <input type="text" id="box" placeholder="Input Data">
+                <!-- <input type="text" id="box" placeholder="Book ID"> -->
+                <!-- <input type="text" id="box" placeholder="Student Roll"> -->
+                <p id="demo"></p>
+               </form> <br>
+               <button onclick="data()">Submit data</button>  <button onclick="deletee()">Reset data</button>
+               <button onclick="remove()">Remove</button>
+
+               
+           </div>
+              
+   <script> 
+    var items = [];
+
+function data(){
+ 
+           
+    boxvalue = document.getElementById('box').value;
+    items.push(boxvalue);  
+  var doc = document.getElementById("demo"); 
+   document.getElementById("demo").innerHTML=items;
+  }
+  function deletee() {
+      var items = document.getElementById("demo");
+      items.remove();
+      
+  }
+  function remove() {
+  items.pop();
+  document.getElementById("demo").innerHTML = items;
+}
+  
+   </script>
+   </body>
+   </html>
+   
+   

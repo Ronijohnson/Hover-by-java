@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    
+    <title>Table</title>
+</head>
+<body>
+
+    <div id="parent">
+            
+                  
+                  
+              <table id="mytable">
+                  <tr> 
+                      <th>Name</th>
+                      <th>Roll Num</th>
+                      <th>Program</th>
+                      <th>Student Email</th>
+                      
+                  </tr>
+                  <tr>
+                    <td class="vor">Haaamza</td>
+                    <td>21433</td>
+                    <li onmouseover="test()" onmouseleave="display()"  id="show"><td>BSIT </td></li>
+                      
+                    <td>Hamza21@gmail.com</td>
+                    
+                    
+                  </tr> 
+                  <tr>
+                    <td>Junaid</td>
+                    <td>0001</td>
+                    <td>BSCS</td>
+                    <td>Junaid21@gmail.com</td>  
+                    
+                  </tr>
+                  <tr>
+                    <td>Rafay</td>
+                    <td>000</td>
+                    <td>BBA</td>
+                    <td>Rafay21@gmail.com</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Imran</td>
+                    <td>123</td>
+                    <td>BSE</td>
+                    <td>Imran21@gmail.com</td>  
+                    
+                  </tr>
+                  <tr>
+                    <td>Zaman</td>
+                    <td>002</td>
+                    <td>MBA</td>
+                    <td>Zaman21@gmail.com</td>  
+                    
+                  </tr>
+                  <tr>
+                    <td>Farhan</td>
+                    <td>0002</td>
+                    <td>FSC</td>
+                    <td>Faran21@gmail.com</td>  
+                    
+                  </tr>
+              </table>
+              
+            
+            </div>
+            <section>
+                <img id="photo" src="Home.jpg" alt="" width="`10px" height="300px">
+                <img src="garden.jpg" alt="">
+                <img src="school.jpg" alt="">
+                
+            </section>
+          
+              <br>
+              <button onclick="increase()">Increse row</button> <br>
+              Name<input type="text" id="text"> <br>
+              Roll num<input type="text"> <br>
+              Program<input type="text"><br>
+              Email<input type="text"><br>
+              <button  onclick="data()">Enter Data</button>
+              <script>
+                  function increase (){
+                     var table = document.getElementById("mytable");
+                     var row = table.insertRow(7);
+                     var cell1 = row.insertCell(0);
+                     var cell2 = row.insertCell(1);
+                     var cell3 = row.insertCell(2);
+                     var cell4 = row.insertCell(3);
+                     cell1.innerHTML = "mazar";
+                     cell2.innerHTML = "111";
+                     cell3.innerHTML = "BCN";
+                     cell4.innerHTML = "ronijohnson1122@gmail.com"; 
+                  }
+                  function data () {
+                          var data = document.getElementById("text").value;
+                          document.getElementById("iner").innerHTML = data;
+                          console.log ("data");
+                    } 
+                    function test ()
+                 {  
+                     
+
+                var list = document.getElementById("show");
+                
+                  var photo = document.getElementById("photo");
+          
+                     photo.style.visibility = 'visible';
+                     photo.style.display = 'block';
+                }
+                function display () {
+                    var leav =document.getElementById("show");
+                    var doc =document.getElementById("photo");
+                    doc.style.visibility = "hidden";
+                    doc.style.display = 'none';
+                }
+              </script>
+
+                
+                 
+            
+</body>
+
+</html>

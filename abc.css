@@ -1,0 +1,21 @@
+.picturee{
+    display: none;
+}
+.home:hover  ~  .picturee{
+    display: block;
+    
+}
+
+    
+.school{
+    display: none;
+}
+.scl:hover ~ .school{
+    display: block;
+}
+.garden{
+    display: none;
+}
+.gar:hover ~ .garden{
+    display: block;
+}

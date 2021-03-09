@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="roni.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Wellcome to your Gallery <hr></h1></center>
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li onmouseover="test()" onmouseleave="display()"  id="show"><h1>House </h1></li>
+                   
+                <li onmouseover="testt()" onmouseleave="displayy()"  id="showw"><h1>School </h1></li>
+                <li onmouseover="testtt()" onmouseleave="displayyy()"  id="showww"><h1>Garden</h1></li>
+                   
+                    
+                
+                
+            </ul>
+        </nav>
+        <section>
+            <img id="photo" src="Home.jpg" alt="" width="`10px" height="300px">
+            <img id="photoo" src="school.jpg" alt="" width="`10px" height="300px">
+            <img id="photooo" src="garden.jpg" alt="" width="`10px" height="300px">
+        </section>
+          
+    </div>
+     <script>
+         function test ()
+                 {  
+                     
+
+                var list = document.getElementById("show");
+                
+                  var photo = document.getElementById("photo");
+          
+                     photo.style.visibility = 'visible';
+                     photo.style.display = 'block';
+                }
+                function display () {
+                    var leav =document.getElementById("show");
+                    var doc =document.getElementById("photo");
+                    doc.style.visibility = "hidden";
+                    doc.style.display = 'none';
+                }
+                
+                function testt ()
+                 {  
+                    
+
+                var listt = document.getElementById("showw");
+                
+                  var photoo = document.getElementById("photoo");
+          
+                     photoo.style.visibility = 'visible';
+                     photoo.style.display = 'block';
+                }
+                function displayy () {
+                    var leavv =document.getElementById("showw");
+                    var docc =document.getElementById("photoo");
+                    docc.style.visibility = "hidden";
+                    docc.style.display = 'none';
+                }
+                function testtt ()
+                 {  
+                    
+
+                var listtt = document.getElementById("showww");
+                
+                  var photooo = document.getElementById("photooo");
+          
+                     photooo.style.visibility = 'visible';
+                     photooo.style.display = 'block';
+                }
+                function displayyy () {
+                    var leavvv =document.getElementById("showww");
+                    var doccc =document.getElementById("photooo");
+                    doccc.style.visibility = "hidden";
+                    doccc.style.display = 'none';
+                }
+
+                 
+                    
+     </script>
+</body>
+</html>
